@@ -1,7 +1,178 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
 
+:root {
+  --dark-bg: #1f2937;
+  --main-text: #f9faf8;
+  --secondary-text: #e5e7eb;
+  --btn-color: #3882f6;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav,
+.first {
+  background-color: var(--dark-bg);
+}
+
+.container {
+  display: flex;
+  padding: 1.5em 0;
+  width: 75%;
+  margin: 0 auto;
+  gap: 2em;
+}
+
+.nav-l {
+  font-size: 24px;
+  color: var(--main-text);
+  font-weight: 900;
+}
+
+.nav-r {
+  font-size: 18px;
+  color: var(--secondary-text);
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.first {
+  padding: 3em 0;
+}
+
+.fl {
+  width: 50%;
+}
+
+.fr {
+  margin-left: auto;
+  justify-content: flex-end;
+  height: 250px;
+  width: 50%;
+}
+
+.fr > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+.fl > h1 {
+  font-weight: 900;
+  font-size: 48px;
+  color: var(--main-text);
+}
+
+.fl > p {
+  font-size: 18px;
+  color: var(--secondary-text);
+}
+
+.fl > button {
+  padding: 0.5em 2.5em;
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 7.5px;
+  color: var(--main-text);
+  margin-top: 1em;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.second {
+  text-align: center;
+  margin: 3em 0;
+}
+
+.second h2 {
+  margin-bottom: 1.5em;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+}
+
+.info img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5em;
+}
+
+.info {
+  width: 200px;
+}
+
+.third {
+  background-color: var(--secondary-text);
+  padding: 5em 0;
+}
+
+.third-contain {
+  width: 60%;
+  margin: auto;
+}
+
+.third p:nth-child(1) {
+  font-size: 36px;
+  font-style: italic;
+}
+
+.third p:nth-child(2) {
+  margin-top: 0.5em;
+  text-align: end;
+  font-size: 18px;
+}
+
+.fourth {
+  background-color: var(--btn-color);
+  width: 75%;
+  padding: 3em 6em;
+  margin: 4em auto;
+  border-radius: 7px;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.fourth p {
+  color: var(--secondary-text);
+}
+
+.fourth button {
+  background-color: var(--btn-color);
+  padding: 0.5em 2em;
+  background-color: var(--btn-color);
+  border: 1px solid var(--main-text);
+  border-radius: 7.5px;
+  color: var(--main-text);
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+footer {
+  padding: 2em 0;
+  text-align: center;
+  background-color: var(--dark-bg);
+  color: var(--main-text);
 }
